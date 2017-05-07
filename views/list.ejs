@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<h1>hello list page</h1>
+
+
+<h1>Use this Section to list all items on the list</h1>
+
+<% addItem.forEach(function(item){ %>
+    <li> 
+        <%= item %>
+    </li>
+<% }); %>
+
+
+<form action="additem" method="POST">
+    <input type="text" name="newItem" placeholder="add new item">
+    <button>Submit</button>
+</form>
+
+
+
+
+
+
+
+
+<% include partials/footer %>
+

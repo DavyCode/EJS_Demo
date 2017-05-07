@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+
+<h1>THIS IS THE PAGE WHERE WE LOOP THROUGH THE ARRAY and RENDER MOVIE OBJECTS</h1>
+
+<% loopMovie.forEach(function(movies){ %>
+    <li> 
+        <%= movies.title  %> - <%= movies.actor  %>
+    </li>
+<% }); %>
+
+
+
+
+
+
+
+
+
+
+
+<% include partials/footer %>
+
